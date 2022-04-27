@@ -3,6 +3,6 @@ import CoffeeControler from "../controllers/coffee_controller.js";
 
 const routes = app.Router();
 
-routes.get("/show/:isHotOrIced", new CoffeeControler().hotCoffee);
+routes.get("/:isHotOrIced", new CoffeeControler().hotCoffee);
 
 export default routes;
